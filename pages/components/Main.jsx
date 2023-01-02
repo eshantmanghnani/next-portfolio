@@ -10,7 +10,7 @@ const Main = () => {
     return (
       // <div className={resolvedTheme ? "dark" : ""}>
         <main>
-        <section className="min-h-screen">
+        <section className="max-h-screen">
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium">Eshant Manghnani</h2>
             <h3 className="text-2xl py-2 text-gray-800 dark:text-white">Junior Software Engineer</h3>
@@ -41,7 +41,7 @@ const Main = () => {
             <AiFillGithub />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mb-20">
             <Image src={test} layout="fill" objectFit="cover"/>
           </div>
         </section>
