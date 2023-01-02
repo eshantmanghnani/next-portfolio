@@ -1,13 +1,18 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import React from 'react'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
-  return (
-    <Html>
-      <Head />
-      <body className="dark:bg-gray-800">
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html lang="en">
+        <Head />
+        <body className="bg-white dark:bg-black text-white dark:text-black">
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }
+
+export default MyDocument
