@@ -56,15 +56,19 @@ const Experience = () => {
         <p className="py-8 text-gray-800 dark:text-white">
          These are the languages that I have used in past projects and have also been studying while working on current projects
         </p>
-        <div className="grid lg:grid-cols-5 gap-16">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-8">
           {experience.map(({ id, title, src }) => (
-            <div
-              key={id}
-              className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg odd:shadow-blue-400 even:shadow-rose-400 rounded-xl hover:scale-105 ease-in duration-300"
-            >
-              <Image src={src} width="64px" height="64px" alt="randomness" align="center" />
-              <h3 className="font-light">{title}</h3>
-            </div>
+            <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
+            <Image
+              src={src}
+              alt={title}
+              className="rounded-md duration-200 
+              hover:scale-110"
+            />
+            <h2 className="text-center text-gray-800 dark:text-white text-base capitalize my-4 duration-200 group-hover:underline underline-offset-4">
+              {title}
+            </h2>
+          </div>
           ))}
         </div>
       </div>
