@@ -3,6 +3,7 @@ import About from './components/About';
 import React, { useContext } from 'react'
 import Main from './components/Main';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 import { ThemeContext  } from './context/themes';
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
 import { useTheme } from 'next-themes'
@@ -32,6 +33,7 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
+      <Projects />
     </div>
   )
 }

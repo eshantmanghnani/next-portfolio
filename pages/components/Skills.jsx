@@ -50,12 +50,12 @@ const Experience = () => {
   return (
     <div id="experience" className="w-full">
       <div className="max-w-screen-l text-center md:text-left py-16">
-        <p className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
+        <h2 className="text-5xl md:text-6xl tracking-wider uppercase text-blue-500 font-bold">
           Skills
-        </p>
-        <h2 className="py-8 text-gray-800 dark:text-white">
-         These are the languages that I have used in past projects and have also been studying while working on current projects
         </h2>
+        <p className="py-8 text-gray-800 dark:text-white">
+         These are the languages that I have used in past projects and have also been studying while working on current projects
+        </p>
         <div className="grid lg:grid-cols-5 gap-16">
           {experience.map(({ id, title, src }) => (
             <div
