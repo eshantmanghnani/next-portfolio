@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import About from './components/About';
-import React, { useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import Main from './components/Main';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -10,6 +10,10 @@ import { useTheme } from 'next-themes'
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => { setMounted(true) }, []);
+  if (!mounted) return <></>;
   return (
     <div className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
       <Head>
