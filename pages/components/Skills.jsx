@@ -7,6 +7,9 @@ import reactImage from "/public/react.png";
 import nextjs from "/public/nextjs.png";
 import tailwind from "/public/tailwind.png";
 import node from "/public/node.png";
+import unity from "/public/unity.png";
+import kotlin from "/public/Kotlin_icon.svg.png";
+import springboot from "/public/spring.png";
 
 const Experience = () => {
   const experience = [
@@ -45,6 +48,21 @@ const Experience = () => {
       title: "Node JS",
       src: node,
     },
+    {
+      id: 8,
+      title: "Unity (C#)",
+      src: unity,
+    },
+    {
+      id: 9,
+      title: "Kotlin",
+      src: kotlin,
+    },
+    {
+      id: 10,
+      title: "Springboot",
+      src: springboot,
+    },
   ];
 
   return (
@@ -59,7 +77,7 @@ const Experience = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-8">
           {experience.map(({ id, title, src }) => (
             <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
-            <Image
+            <Image 
               src={src}
               alt={title}
               className="rounded-md duration-200 
