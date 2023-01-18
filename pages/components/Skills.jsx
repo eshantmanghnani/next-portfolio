@@ -8,7 +8,7 @@ import nextjs from "/public/nextjs.png";
 import tailwind from "/public/tailwind.png";
 import node from "/public/node.png";
 import unity from "/public/unity.png";
-import kotlin from "/public/Kotlin_icon.svg.png";
+import kotlin from "/public/kotlin_icon.png";
 import springboot from "/public/spring.png";
 
 const Experience = () => {
