@@ -2,7 +2,6 @@ import test from '/public/asdasd.png';
 import Image from 'next/legacy/image';
 import cognizant from '/public/cognizant.png'
 import { useState } from "react";
-import { useThemeContext } from '/pages/context/themes';
 
 const About = () => {
     return (
