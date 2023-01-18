@@ -8,7 +8,7 @@ import Contact from './Contact';
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
 import { useTheme } from 'next-themes'
 
-export default function Home() {
+function Home() {
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false);
 
@@ -42,3 +42,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home;
