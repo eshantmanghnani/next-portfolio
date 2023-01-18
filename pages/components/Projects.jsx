@@ -1,7 +1,7 @@
 import React from "react";
 import { MdExpandMore } from "react-icons/md";
-import stroop from '/public/stroop.png';
-import vault from "/public/vault.png";
+import stroop from '../../public/stroop.png';
+import vault from "../../public/vault.png";
 import Link from "next/link";
 import Image from "next/image";
 

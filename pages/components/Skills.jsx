@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import html from '/public/html.png';
-import css from "/public/css.png";
-import javascript from "/public/javascript.png";
-import reactImage from "/public/react.png";
-import nextjs from "/public/nextjs.png";
-import tailwind from "/public/tailwind.png";
-import node from "/public/node.png";
-import unity from "/public/unity.png";
-import kotlin from "/public/kotlin_icon.png";
-import springboot from "/public/spring.png";
+import html from '../../public/html.png';
+import css from "../../public/css.png";
+import javascript from "../../public/javascript.png";
+import reactImage from "../../public/react.png";
+import nextjs from "../../public/nextjs.png";
+import tailwind from "../../public/tailwind.png";
+import node from "../../public/node.png";
+import unity from "../../public/unity.png";
+import kotlin from "../../public/kotlin_icon.png";
+import springboot from "../../public/spring.png";
 
 const Experience = () => {
   const experience = [

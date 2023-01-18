@@ -1,7 +1,7 @@
 import React from 'react'
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
 import {AiFillInstagram, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
-import test from '/public/asdasd.png';
+import test from '../../public/asdasd.png';
 import Image from 'next/legacy/image';
 import { useThemeContext } from '../context/themes';
 import { useTheme } from 'next-themes'

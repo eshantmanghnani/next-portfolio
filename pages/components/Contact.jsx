@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import contactusImage from '/public/asdasd.png';
+import contactusImage from '../../public/asdasd.png';
 
 const Contact = () => {
   return (
