@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import About from '../components/About';
+import About from './About';
 import React, { useState, useEffect } from 'react'
-import Main from '../components/Main';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
+import Main from './Main';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
 import { useTheme } from 'next-themes'
 
