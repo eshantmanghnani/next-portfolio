@@ -74,14 +74,14 @@ const Experience = () => {
         <p className="py-8 text-gray-800 dark:text-white">
          These are the languages that I have used in past projects and have also been studying while working on current projects
         </p>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-8">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-8"> 
           {experience.map(({ id, title, src }) => (
-            <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
+            <div className="object-cover cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
             <Image 
               src={src}
               alt={title}
-              className="rounded-md duration-200 
-              hover:scale-110"
+              className="rounded-6md duration-200
+              hover:scale-110 object-cover items-center mx-auto h-auto w-full sm:w-2/4"
             />
             <h2 className="text-center text-gray-800 dark:text-white text-base capitalize my-4 duration-200 group-hover:underline underline-offset-4">
               {title}
