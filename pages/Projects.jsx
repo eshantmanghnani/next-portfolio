@@ -27,12 +27,6 @@ const Projects = () => {
     //   imageSrc: javascript,
     //   url: "use-state-hook",
     // },
-    // {
-    //   id: 4,
-    //   title: "react parallax scroll",
-    //   imageSrc: reactImage,
-    //   url: "react-parallax",
-    // },
   ];
 
   return (

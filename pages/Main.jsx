@@ -1,18 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
 import {AiFillInstagram, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import test from '/public/asdasd.png';
 import Image from 'next/legacy/image';
 import { useThemeContext } from '../context/themes';
-import { useTheme } from 'next-themes'
+import { useTheme } from 'next-themes';
+import axios from 'axios';
 
 const Main = () => {
+  const [users,setUsers]=useState({
+    description:"",
+    imageUrl:""
+  })
+  useEffect(()=>{
+    loadUser();
+  },[])
+
+  const loadUser = async()=>{
+    const result = await axios.get("http://localhost:8080/details/123456")
+    console.log(result)
+    setUsers(result.data);
+  }
+
+
     return (
       // <div className={resolvedTheme ? "dark" : ""}>
         <main>
         <section className="min-h-screen">
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Eshant Manghnani</h2>
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">{users.description}</h2>
             <h3 className="text-2xl py-2 text-gray-800 dark:text-white">Junior Software Engineer</h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
               Java developer currently working for Cognizant Softivision
@@ -42,7 +58,7 @@ const Main = () => {
             </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mb-20">
-            <Image src={test} layout="fill" objectFit="cover"/>
+            <Image src={users.imageUrl} layout="fill" objectFit="cover"/>
           </div>
         </section>
       </main>
